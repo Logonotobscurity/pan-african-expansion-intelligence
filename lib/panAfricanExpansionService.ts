@@ -134,12 +134,7 @@ export function buildExpansionQueue(signals: ExpansionSignal[]): ScoredExpansion
 
   return signals
     .filter((signal) => {
-      const key = dedupeKey({
-        company: signal.company,
-        signalType: signal.signalType,
-        markets: signal.markets,
-        lastMaterialUpdateAt: signal.lastMaterialUpdateAt,
-      })
+      const key = dedupeKey(signal)
       if (seen.has(key)) return false
       seen.add(key)
       return true
@@ -176,6 +171,7 @@ export function buildCountryRadar(queue: ScoredExpansionSignal[]): CountryRadarI
         COUNTRY_PROFILE_BY_NAME.get(key) ??
         PAN_AFRICAN_COUNTRY_PROFILES.find((item) => item.name.toLowerCase().includes(key)) ?? {
           iso2: "XX",
+          iso3: "XXX",
           name: items[0]?.signal.markets.find((market) => market.role === "target")?.country ?? key,
           region: "Unknown",
           authorityAnchors: [],
