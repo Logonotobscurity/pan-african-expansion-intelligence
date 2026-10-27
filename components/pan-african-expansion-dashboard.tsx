@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import { useMemo, useState } from "react"
 import { ArrowUpRight, Building2, ChevronDown, CircleAlert, Globe2, Handshake, ShieldCheck, WalletCards } from "lucide-react"
 import type { ScoredExpansionSignal } from "@/lib/panAfricanExpansionService"
@@ -55,13 +54,6 @@ export function PanAfricanExpansionDashboard({
               </span>
             </div>
           </div>
-          <Link
-            href="/dashboard"
-            className="inline-flex items-center gap-2 rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium hover:bg-slate-50"
-          >
-            Back to analytics
-            <ArrowUpRight className="h-4 w-4" />
-          </Link>
         </div>
       </div>
 
