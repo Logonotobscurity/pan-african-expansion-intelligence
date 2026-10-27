@@ -172,6 +172,14 @@ lib/
 - Recheck local payment, licensing, data-protection, tax and entity-entry requirements with the relevant primary authority.
 - Do not ingest confidential contact data or information you are not authorised to process.
 
+## About LOG_ON
+
+LOG_ON builds automation and intelligence systems that help teams turn information into reliable decisions and operational workflows. This project applies that approach to Pan-African expansion research by connecting observable signals with evidence, country-level verification questions and practical implementation opportunities.
+
+**Suggested GitHub About description:** Evidence-led market-entry intelligence for Africa: expansion signal scoring, country verification tracks, partner paths and next-action prioritisation.
+
+**Suggested repository topics:** `pan-african`, `market-intelligence`, `market-entry`, `africa`, `nextjs`, `react`, `typescript`, `supabase`.
+
 ## Contributing
 
 Issues and pull requests are welcome. For changes to scoring or validation, include examples that demonstrate the expected result and explain any changes to prioritisation semantics. For UI changes, verify responsive layouts and capture a short browser demo when a reachable preview is available.
